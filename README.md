@@ -1,7 +1,7 @@
-🏗️ The Suckless Suite
+ The Suckless Suite
 Unlike standard software, Suckless tools are configured at the source. My builds are the result of careful selection, manual patching, and C-header optimization.
 
-🔲 dwm (Dynamic Window Manager)
+dwm (Dynamic Window Manager)
 The centerpiece of my workflow.
 
 Philosophy: Tiling with no bloat.
