@@ -1,0 +1,69 @@
+# Created by newuser for 5.9
+
+PROMPT='/usr/bin/zsh > '
+
+alias v='vim'
+alias c='clear'
+alias ps='poweroff'
+alias pr='reboot'
+alias fetch='neofetch'
+alias ap='sudo pacman -S'
+alias ay='yay -S'
+
+
+
+
+# Initialize the completion system
+autoload -Uz compinit
+compinit
+
+# Improve the interface (allows arrow key selection)
+zstyle ':completion:*' menu select
+
+
+# Source the plugins
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# --- Battery Warning & Clock ---
+
+# 1. Get battery capacity (Change BAT0 to BAT1 if needed)
+if [ -f /sys/class/power_supply/BAT0/capacity ]; then
+    BAT_LEVEL=$(cat /sys/class/power_supply/BAT0/capacity)
+    BAT_STATUS=$(cat /sys/class/power_supply/BAT0/status)
+
+    # 2. Check if lower than 20% and NOT charging
+    if [ "$BAT_LEVEL" -le 20 ] && [ "$BAT_STATUS" != "Charging" ]; then
+        echo -e "\n\e[1;31m󰂃 WARNING: Battery is low ($BAT_LEVEL%)!\e[0m"
+    fi
+fi
+
+# 3. Show the time in a clean way (e.g., 14:30:05)
+#echo -e "\e[1;34m󰥔 Current Time: \e[0m\e[1;37m$(date +%H:%M:%S)\e[0m\n"
+
+
+
+
+
+# Where to save the history
+HISTFILE=~/.zsh_history
+
+# How many lines to keep in the current session
+HISTSIZE=10000
+
+# How many lines to save in the history file
+SAVEHIST=10000
+
+# Write to the history file immediately, not just when exiting
+setopt INC_APPEND_HISTORY
+
+# Share history between different terminal windows/tabs
+setopt SHARE_HISTORY
+
+# Don't record duplicates
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+
+# Remove extra blanks from commands
+setopt HIST_REDUCE_BLANKS
