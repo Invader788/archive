@@ -1,23 +1,52 @@
-# archive
+🏗️ The Suckless Suite
+Unlike standard software, Suckless tools are configured at the source. My builds are the result of careful selection, manual patching, and C-header optimization.
 
-My collection of files and configuration of my favorite free and open-source software. 
+🔲 dwm (Dynamic Window Manager)
+The centerpiece of my workflow.
 
-# Suckless software
+Philosophy: Tiling with no bloat.
 
-all suckless software used is my configuration of the original suckless
-dwm (dynamic window manager), dwmblocks, dmenu and st (simple terminal)
+Autostart – Seamless session initialization.
 
-here is a link to there website ⬇️
+Cyclelayouts – Fluid transition between master-stack and monocle modes.
 
-https://suckless.org
+Colors: Custom Nord-inspired/Monochrome palettes defined in config.h.
 
-# Wallpapers
+st (Simple Terminal)
+A terminal emulator that stays out of the way.
 
-All wallpapers provided are photograped and edited by me!
+Performance: Very minimal so launches very fast.
 
-Thank you! 
+Features: Patched with scrollback for history and alpha for subtle background transparency.
+
+dmenu & dwmblocks
+The nervous system of the build.
+
+dmenu: Custom-height patching to match the bar, optimized for rapid application launching.
+
+dwmblocks: A modular C-based status bar. No heavy daemons—just periodic signal-based updates for the date, time and Battery.
+
+Original Wallpapers
+Every wallpaper in this archive is a 1-of-1 original. I believe the digital workspace should be an extension of the physical world.
+
+Invader788
+
+[!TIP]
+License Note: The software configurations are released under the MIT/X11 license. The wallpapers are provided for personal use—please reach out if you'd like to use them for commercial projects!
+
+Build Instructions
+To reproduce this environment, ensure you have the Xlib development headers installed, then clone and compile:
+
+Bash
+
+git clone https://github.com/Invader788/archive
+
+— Keep it simple.
 
 
 
+contact:
 
+Space_Invader788@proton.me
 
+Thank for your support!
