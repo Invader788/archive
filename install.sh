@@ -29,16 +29,6 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 yay -S arc-gtk-theme
-mkdir ~/.xinitrc
-cat > ~/.xinitrc <<'EOF'
-#!/bin/sh
-export GTK_THEME="Arc-Dark"
-export XDG_CONFIG_DIRS="$XDG_CONFIG_DIRS"
-export GTK_APPLICATION_PREFERS_DARK_THEME=1
-dwmblocks &
-exec dwm
-EOF
-chmod +x ~/.xinitrc
 sudo pacman -S zsh
 zsh
 
