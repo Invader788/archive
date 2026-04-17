@@ -30,5 +30,22 @@ cd yay
 makepkg -si
 yay -S arc-gtk-theme
 sudo pacman -S zsh
-zsh
+
+cp -r ~/archive/Wallpapers ~/ 
+cp ~/archive/picom.conf ~/
+
+# Create .xinitrc
+cat > ~/.xinitrc << 'EOF'
+#!/bin/sh
+
+picom -b --config /home/as/picom.conf
+feh --bg-fill /home/as/Wallpapers/11.JPG
+dwmblocks &
+
+exec dwm
+EOF
+
+# Make it executable
+chmod +x ~/.xinitrc
+
 
