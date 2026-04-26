@@ -1,0 +1,8 @@
+ yt-dlp -x --audio-format flac -o "%(playlist_index)02d - %(title)s.%(ext)s" "URL"
+
+
+
+
+INSTALL
+
+sudo pacman -S yt-dlp ffmpeg
