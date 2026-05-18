@@ -1,0 +1,11 @@
+--- dwm.c
++++ dwm.c
+@@ -486,7 +487,7 @@ cleanup(void)
+ 		cleanupmon(mons);
+ 	for (i = 0; i < CurLast; i++)
+ 		drw_cur_free(drw, cursor[i]);
+-	for (i = 0; i < LENGTH(colors); i++)
++	for (i = 0; i < LENGTH(colors) + 1; i++)
+ 		free(scheme[i]);
+ 	XDestroyWindow(dpy, wmcheckwin);
+ 	drw_free(drw);
