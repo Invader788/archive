@@ -1,7 +1,0 @@
-#!/bin/sh
-export NEOVIDE_SCALE_FACTOR=50
-export GTK_THEME='Arc-Dark'
-picom -b --config /home/as/archive/picom/picom.conf
-feh --bg-fill /home/as/wp.png
-dwmblocks &
-exec dwm
