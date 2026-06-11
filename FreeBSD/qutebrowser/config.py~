@@ -1,0 +1,88 @@
+# =============================================
+# Super Cool Transparent qutebrowser config.py
+# Neon/Cyberpunk + Heavy Transparency Edition
+# =============================================
+
+config.load_autoconfig(False)
+
+# === Core Transparency & Window ===
+c.window.transparent = True
+
+# Webpage background (solid dark to prevent overlay bugs with hints/completion)
+c.colors.webpage.bg = '#0f0f14'
+
+# Aggressive dark mode
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.policy.images = 'always'
+c.colors.webpage.preferred_color_scheme = 'dark'
+
+# === UI Elements - Neon Glow + Transparency ===
+
+# Tabs - Unselected
+c.colors.tabs.even.bg = 'rgba(30, 30, 45, 0.75)'
+c.colors.tabs.odd.bg  = 'rgba(25, 25, 40, 0.75)'
+c.colors.tabs.even.fg = '#bbbbbb'
+c.colors.tabs.odd.fg  = '#bbbbbb'
+
+# Tabs - Selected (bright cyan neon)
+c.colors.tabs.selected.even.bg = 'rgba(0, 200, 255, 0.95)'
+c.colors.tabs.selected.odd.bg  = 'rgba(0, 200, 255, 0.95)'
+c.colors.tabs.selected.even.fg = '#ffffff'
+c.colors.tabs.selected.odd.fg  = '#ffffff'
+
+# Tabs - Pinned (electric purple)
+c.colors.tabs.pinned.even.bg = 'rgba(140, 0, 255, 0.85)'
+c.colors.tabs.pinned.odd.bg  = 'rgba(140, 0, 255, 0.85)'
+c.colors.tabs.pinned.even.fg = '#ffffff'
+c.colors.tabs.pinned.odd.fg  = '#ffffff'
+
+# Pinned + Selected (slightly different neon for visibility)
+c.colors.tabs.pinned.selected.even.bg = 'rgba(200, 0, 255, 0.95)'
+c.colors.tabs.pinned.selected.odd.bg  = 'rgba(200, 0, 255, 0.95)'
+c.colors.tabs.pinned.selected.even.fg = '#ffffff'
+c.colors.tabs.pinned.selected.odd.fg  = '#ffffff'
+
+# Statusbar
+c.colors.statusbar.normal.bg = 'rgba(10, 10, 20, 0.90)'
+c.colors.statusbar.insert.bg = 'rgba(0, 220, 120, 0.95)'
+c.colors.statusbar.command.bg = 'rgba(20, 20, 35, 0.95)'
+c.colors.statusbar.url.fg = '#00eeff'
+c.colors.statusbar.url.hover.fg = '#ff00cc'
+c.colors.statusbar.url.success.https.fg = '#00ffaa'
+
+# Completion
+c.colors.completion.fg = '#eeeeee'
+c.colors.completion.odd.bg = 'rgba(20, 20, 35, 0.92)'
+c.colors.completion.even.bg = 'rgba(15, 15, 30, 0.92)'
+c.colors.completion.category.bg = 'rgba(50, 30, 80, 0.95)'
+c.colors.completion.item.selected.bg = 'rgba(0, 180, 255, 0.85)'
+c.colors.completion.item.selected.fg = '#ffffff'
+
+# Hints - Hot cyberpunk neon
+c.colors.hints.bg = 'rgba(255, 0, 220, 0.90)'
+c.colors.hints.fg = '#ffffff'
+c.colors.hints.match.fg = '#ffff00'
+c.hints.radius = 10
+c.hints.border = '2px solid rgba(255, 255, 255, 0.6)'
+
+# Other UI
+c.colors.downloads.bar.bg = 'rgba(10, 10, 20, 0.92)'
+c.colors.keyhint.bg = 'rgba(0, 0, 0, 0.75)'
+c.colors.prompts.bg = 'rgba(20, 20, 35, 0.97)'
+
+# === Layout & Behavior ===
+c.tabs.position = 'top'
+c.tabs.background = True
+c.tabs.padding = {'top': 8, 'bottom': 8, 'left': 10, 'right': 10}
+c.statusbar.padding = {'top': 5, 'bottom': 5, 'left': 8, 'right': 8}
+
+c.url.start_pages = ["https://start.duckduckgo.com"]
+c.url.default_page = "https://start.duckduckgo.com"
+
+c.scrolling.smooth = True
+c.content.javascript.enabled = True
+c.content.pdfjs = True
+
+# === Quick Toggles ===
+config.bind(',t', 'config-cycle window.transparent true false')
+config.bind(',d', 'config-cycle colors.webpage.darkmode.enabled true false')

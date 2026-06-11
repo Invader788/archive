@@ -1,0 +1,69 @@
+# Created by newuser for 5.9
+
+PROMPT='%~ > '
+
+alias v='nvim'
+alias c='clear'
+alias ps='sudo poweroff'  # Added sudo since non-root users can't poweroff by default
+alias pr='sudo reboot'    # Added sudo since non-root users can't reboot by default
+alias fetch='neofetch'
+
+# FreeBSD Package Management Aliases
+alias ap='sudo pkg install'
+alias ay='cd /usr/ports && sudo portsnap auto' # A close equivalent for updating ports
+
+alias alacritty="alacritty 2>/dev/null"
+
+# Initialize the completion system
+autoload -Uz compinit
+compinit
+
+# Improve the interface (allows arrow key selection)
+zstyle ':completion:*' menu select
+
+# Source the plugins (Updated paths for FreeBSD)
+if [ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+if [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+# --- Battery Warning & Clock (FreeBSD ACPI Version) ---
+
+# Check if ACPI battery management is available
+if sysctl hw.acpi.battery.life >/dev/null 2>&1; then
+    BAT_LEVEL=$(sysctl -n hw.acpi.battery.life)
+    BAT_STATE=$(sysctl -n hw.acpi.battery.state) # 1 = discharging, 2 = charging
+
+    # Check if lower than or equal to 20% and discharging
+    if [ "$BAT_LEVEL" -le 20 ] && [ "$BAT_STATE" -eq 1 ]; then
+        echo -e "\n\e[1;31m󰂃 WARNING: Battery is low ($BAT_LEVEL%)!\e[0m"
+    fi
+fi
+
+# 3. Show the time in a clean way (e.g., 14:30:05)
+#echo -e "\e[1;34m󰥔 Current Time: \e[0m\e[1;37m$(date +%H:%M:%S)\e[0m\n"
+
+# Where to save the history
+HISTFILE=~/.zsh_history
+
+# How many lines to keep in the current session
+HISTSIZE=10000
+
+# How many lines to save in the history file
+SAVEHIST=10000
+
+# Write to the history file immediately, not just when exiting
+setopt INC_APPEND_HISTORY
+
+# Share history between different terminal windows/tabs
+setopt SHARE_HISTORY
+
+# Don't record duplicates
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+
+# Remove extra blanks from commands
+setopt HIST_REDUCE_BLANKS
