@@ -60,7 +60,7 @@ style = { shape = "Beam", blinking = "On" }
 
 # --- Shell ---
 [terminal.shell]
-program = "/usr/bin/zsh"
+program = "/usr/local/bin/zsh"
 
 # --- Keybindings ---
 [[keyboard.bindings]]
