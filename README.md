@@ -3,7 +3,7 @@
 
 
 
-# dwm (Dynamic Window Manager)
+# dwm 
 A simple customizable window manager I use
 
 
