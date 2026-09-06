@@ -32,7 +32,7 @@ License Note: The suckless software configurations are released under the MIT/X1
 
 ## Screenshots
 
-![Screenshot1] (ArchLinux/demo1.bmp)
+![Screenshot1](ArchLinux/demo1.bmp)
 
 ![Screenshot2](ArchLinux/demo2.bmp)
 
