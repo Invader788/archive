@@ -12,7 +12,7 @@ A simple customizable window manager I use
 
 
 # dmenu & dwmblocks
-I use dmenu and dwmblocks alongside dwm 
+I use dmenu and dwmblocks alongside dwm, 
 dmenu - open apps 
 dwmblocks - provide time, date, battery, and network information
 
@@ -30,7 +30,9 @@ it will probably work on different Operating systems as well.
 License Note: The suckless software configurations are released under the MIT/X11 license. 
 
 
+## Demo
 
+![Demo screenshot](ArchLinux/demo.bmp)
 
 
 
