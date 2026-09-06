@@ -1,5 +1,9 @@
+!#/bin/sh
+
+#Update system
 sudo pacman -Syu --noconfirm
 
+#Install dependencies
 sudo pacman -S --needed --noconfirm \
   base-devel \
   git \
