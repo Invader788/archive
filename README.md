@@ -101,17 +101,17 @@ sudo pacman -S --needed --noconfirm \
    set directory for my computer, if you want to use a wallpaper then add the directory for your image.
 
 # Keyboard Shortcuts
-Open Terminal window (meta + t)
-Open browser window (meta + b)
-Open file browser windows (meta + f)
-Open dmenu (meta + d)
-Change window layout to master-stack (meta + s)
-Change window layout to dwindle (meta + w)
-Change windows layout to Fibonacci sequence (meta + a)
-Change window layout to floating (meta + e)
-Swap window to master (meta + r)
-Push window(s) to the right (meta + l)
-Push window(s) to the left (meta + h)
+Open Terminal window (meta + t),
+Open browser window (meta + b),
+Open file browser windows (meta + f),
+Open dmenu (meta + d),
+Change window layout to master-stack (meta + s),
+Change window layout to dwindle (meta + w),
+Change windows layout to Fibonacci sequence (meta + a),
+Change window layout to floating (meta + e),
+Swap window to master (meta + r),
+Push window(s) to the right (meta + l),
+Push window(s) to the left (meta + h),
 
 
 # Legal
