@@ -1,0 +1,29 @@
+
+static const Block blocks[] = {
+
+
+// Date
+    {
+        "",
+        "sh -c 'date +\"󰃭 %Y-%m-%d\"'",
+        60,
+        0
+    },
+    // Time
+    {
+        "",
+        "sh -c 'date +\"󰥔 %H:%M\"'",
+        5,
+        0
+    },
+    // Right spacer (prevents clipping against the right edge)
+    {
+        "   ",
+        "",
+        5,
+        0
+    },
+};
+
+static char delim[] = "  ";
+static unsigned int delimLen = 2;
