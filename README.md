@@ -18,6 +18,8 @@ cd archive
   I will be adding more support in the future.
 
 4. Install dependencies:
+
+   BSD
 ```BSD
 
 sudo pkg update
@@ -43,6 +45,31 @@ sudo pkg install -y \
     feh
     firefox
 ```
+ArchLinux
+```
+sudo pacman -Syu --noconfirm
+
+sudo pacman -S --needed --noconfirm \
+    base-devel \
+    git \
+    harfbuzz \
+    libxinerama \
+    libxft \
+    xorg-server \
+    xorg-xinit \
+    neovim \
+    zsh \
+    zsh-autosuggestions \
+    zsh-syntax-highlighting \
+    feh \
+    picom \
+    thunar \
+    thunar-archive-plugin \
+    engrampa \
+    p7zip \
+    ttf-martian-mono-nerd
+```
+
 
 
 
