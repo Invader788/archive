@@ -41,10 +41,7 @@ Bash
 
 git clone https://github.com/Invader788/archive
 
-
-
-[Selection_001.bmp](https://github.com/user-attachments/files/31884186/Selection_001.bmp)
-
+# Contact
 
 contact:
 
