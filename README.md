@@ -1,6 +1,17 @@
 
 
 
+# Build Instructions
+
+Note! you will not be able to compile dwm without the Xlib development headers.
+
+
+'''bash
+git clone https://github.com/Invader788/archive
+
+
+
+
 
 
 # dwm 
@@ -39,12 +50,6 @@ License Note: The suckless software configurations are released under the MIT/X1
 
 
 
-# Build Instructions
-To reproduce this environment, ensure you have the Xlib development headers installed, then clone and compile:
-
-Bash
-
-git clone https://github.com/Invader788/archive
 
 # Contact
 
