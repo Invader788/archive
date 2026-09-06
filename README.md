@@ -6,7 +6,7 @@
 Note! you will not be able to compile dwm without the Xlib development headers.
 
 
-'''bash
+'''
 git clone https://github.com/Invader788/archive
 '''
 
