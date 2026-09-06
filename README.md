@@ -5,10 +5,12 @@
 
 Note! you will not be able to compile dwm without the Xlib development headers.
 
-
-'''
+1. Clone github repository, make sure you have git installed on your system.
+```bash
 git clone https://github.com/Invader788/archive
-'''
+```
+
+
 
 
 
