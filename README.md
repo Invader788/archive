@@ -30,9 +30,12 @@ it will probably work on different Operating systems as well.
 License Note: The suckless software configurations are released under the MIT/X11 license. 
 
 
-## Demo
+## Screenshots
 
-![Demo screenshot](ArchLinux/demo.bmp)
+![Screenshot1] (ArchLinux/demo1.bmp)
+
+![Screenshot2](ArchLinux/demo2.bmp)
+
 
 
 
