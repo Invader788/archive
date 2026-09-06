@@ -9,6 +9,13 @@ Note! you will not be able to compile dwm without the Xlib development headers.
 ```bash
 git clone https://github.com/Invader788/archive
 ```
+2. Open the folder labeled "archive" in the same directory you cloned the repository.
+```
+cd archive
+```
+3. Once inside the "archive" directory navigate to the "ArchLinux" or "freeBSD" folders
+  based on the type of system you have, this project will work best on ArchLinux and freeBSD,
+  I will be adding more   
 
 
 
