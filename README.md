@@ -102,12 +102,12 @@ sudo pacman -S --needed --noconfirm \
 
 # Keyboard Shortcuts
 Open Terminal window (meta + t),
-Open browser window (meta + b),
-Open file browser windows (meta + f),
+Open Browser window (meta + b),
+Open File browser window (meta + f),
 Open dmenu (meta + d),
 Change window layout to master-stack (meta + s),
 Change window layout to dwindle (meta + w),
-Change windows layout to Fibonacci sequence (meta + a),
+Change window layout to Fibonacci sequence (meta + a),
 Change window layout to floating (meta + e),
 Swap window to master (meta + r),
 Push window(s) to the right (meta + l),
