@@ -113,6 +113,9 @@ Swap window to master (meta + r),
 Push window(s) to the right (meta + l),
 Push window(s) to the left (meta + h),
 
+# Other information
+By default feh will look for the wallpaper in ~/Desktop/wp.png if you would like to change this check xinitrc
+
 
 # Legal
 License Note: The suckless software configurations are released under the MIT/X11 license. 
