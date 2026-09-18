@@ -27,8 +27,8 @@ sudo pacman -S --needed --noconfirm \
   thunar-archive-plugin \
   engrampa \
   p7zip \
-  ttf-martian-mono-nerd
-  alacritty \
+  ttf-martian-mono-nerd \
+  alacritty
 
   #install dwm
   cd dwm
