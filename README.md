@@ -112,6 +112,7 @@ Change window layout to floating (meta + e),
 Swap window to master (meta + r),
 Push window(s) to the right (meta + l),
 Push window(s) to the left (meta + h),
+exit X (meta + shift + q),
 
 
 # Legal
@@ -128,7 +129,10 @@ License Note: The suckless software configurations are released under the MIT/X1
 
 
 
+
 # Contact
 
 email:
 Space_Invader788@proton.me
+
+Thanks to TheRealBrodie for helping out with the new install script!
