@@ -40,7 +40,10 @@ sudo pacman -S --needed --noconfirm \
   alacirtty \
   nvim \
   picom \
-  firfox 
+  firfox \
+  glib2 \
+  adwaita-icon-theme \
+  gsettings-desktop-schemas gtk3 gtk4 
   
 
 
