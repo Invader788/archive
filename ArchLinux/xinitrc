@@ -5,9 +5,9 @@ export QT_QPA_PLATFORMTHEME=qt6ct
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita:dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-feh --bg-fill /home/as/Desktop/wp.png
+feh --bg-fill ~/home/wp.png
 
-picom -b --config /home/as/.config/picom/picom.conf
+picom -b --config ~/home/.config/picom/picom.conf
 
 dwmblocks &
 
