@@ -1,7 +1,20 @@
-
-
-
 # Build Instructions
+Note: the I only have the install.sh script for ArchLinux. 
+
+1. Change directory into the archive/ArchLinux
+   ```
+   cd archive/ArchLinux
+   ```
+2. Start the install scrpt
+   ```
+   chmod +x install.sh
+   ./install.sh
+   ```
+3. After the installation is complete and dwm starts successfully, you can use the "startx" command in the tty to start dwm. 
+
+
+
+# Manual Build Instructions
 
 1. Clone github repository, make sure you have git installed on your system.
 ```bash
