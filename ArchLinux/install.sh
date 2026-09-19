@@ -23,3 +23,45 @@ sudo pacman -S --needed --noconfirm \
   engrampa \
   p7zip \
   ttf-martian-mono-nerd
+
+#Compile dwm
+  cd dwm
+  sudo make clean install
+  cd ..
+  cd dwmblocks
+  sudo make clean install
+  cd ..
+  cd dmenu
+  sudo make clean install
+
+
+#Install programs
+  sudo pacman -S --needed --noconfirm \
+  alacirtty \
+  nvim \
+  picom \
+  firfox 
+  
+
+
+#Configure programs
+  cp -r alacritty ~/.config
+  cp -r nvim ~/.config
+  cp -r picom ~/.config
+  cd zsh
+  cp -r zshrc ~/.zshrc
+  cd ..
+  cp -r xinitrc ~/.xinitrc
+  cd -r 
+
+  #start dwm
+
+  startx
+
+
+
+
+
+
+
+  
