@@ -13,7 +13,7 @@
    ```
 3. After the installation is complete and dwm starts successfully, you can use the "startx" command in the tty to start dwm. 
 
-Note: the I only have the install.sh script for ArchLinux. 
+Note: the I only have the **full** install.sh script for ArchLinux. 
 
 
 # Manual Build Instructions
