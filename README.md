@@ -1,5 +1,6 @@
+
 # Build Instructions
-Note: the I only have the install.sh script for ArchLinux. 
+
 
 1. Change directory into the archive/ArchLinux
    ```
@@ -12,6 +13,7 @@ Note: the I only have the install.sh script for ArchLinux.
    ```
 3. After the installation is complete and dwm starts successfully, you can use the "startx" command in the tty to start dwm. 
 
+Note: the I only have the install.sh script for ArchLinux. 
 
 
 # Manual Build Instructions
