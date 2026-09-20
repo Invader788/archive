@@ -138,6 +138,8 @@ License Note: The suckless software configurations are released under the MIT/X1
 
 ![Screenshot1](ArchLinux/demo1.bmp)
 
+![Screenshot2](ArchLinux/Selection_001.bmp)
+
 ![Screenshot2](ArchLinux/demo2.bmp)
 
 
