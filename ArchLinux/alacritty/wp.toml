@@ -1,0 +1,74 @@
+# --- Window ---
+[window]
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+opacity = 0.45
+decorations = "None"
+
+# --- Font ---
+[font]
+size = 9
+
+[font.normal]
+family = "MartianMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "MartianMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "MartianMono Nerd Font"
+style = "Italic"
+
+# --- Colors ---
+[colors.primary]
+background = "#101212"
+foreground = "#b2c1aa"
+
+[colors.cursor]
+text = "#303030"
+cursor = "#b2c1aa"
+
+[colors.selection]
+text = "#FFFFFF"
+background = "#505050"
+
+[colors.normal]
+black   = "#101212"
+red     = "#524B46"
+green   = "#655B53"
+yellow  = "#6F665B"
+blue    = "#776E61"
+magenta = "#AA5B2B"
+cyan    = "#887768"
+white   = "#b2c1aa"
+
+[colors.bright]
+black   = "#7c8776"
+red     = "#524B46"
+green   = "#655B53"
+yellow  = "#6F665B"
+blue    = "#776E61"
+magenta = "#AA5B2B"
+cyan    = "#887768"
+white   = "#b2c1aa"
+
+# --- Cursor ---
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+# --- Shell ---
+[terminal.shell]
+program = "/usr/bin/zsh"
+
+# --- Keybindings ---
+[[keyboard.bindings]]
+key = "Z"
+mods = "Control|Shift"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "X"
+mods = "Control|Shift"
+action = "IncreaseFontSize"
