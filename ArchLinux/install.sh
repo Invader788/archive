@@ -57,9 +57,10 @@ sudo pacman -S --needed --noconfirm \
   cp -r xinitrc ~/.xinitrc
   cd -r 
 
-  #start dwm
 
-  startx
+
+# uhhh idk lol
+echo Please run startx to start dwm
 
 
 
