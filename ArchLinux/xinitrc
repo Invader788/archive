@@ -1,14 +1,69 @@
+
 #!/bin/sh
 
+# --------------------------------------
+# Environment
+# --------------------------------------
+
 export QT_QPA_PLATFORMTHEME=qt6ct
+export XDG_CURRENT_DESKTOP=dwm
+export XDG_SESSION_DESKTOP=dwm
+
+
+# --------------------------------------
+# Dark GTK theme
+# --------------------------------------
 
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita:dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-feh --bg-fill ~/home/wp.png
 
-picom -b --config ~/home/.config/picom/picom.conf
+# --------------------------------------
+# Wallpaper
+# --------------------------------------
 
-dwmblocks &
+WALLPAPER="$HOME/.config/wallpapers/f.png"
+
+if [ -f "$WALLPAPER" ]; then
+
+    # Generate Pywal colors
+    wal -i "$WALLPAPER" -n
+
+    # Set wallpaper
+    feh --bg-fill "$WALLPAPER"
+
+fi
+
+
+# --------------------------------------
+# Load Pywal colors
+# --------------------------------------
+
+if [ -f "$HOME/.cache/wal/colors.sh" ]; then
+    . "$HOME/.cache/wal/colors.sh"
+fi
+
+
+# --------------------------------------
+# Picom
+# --------------------------------------
+
+if command -v picom >/dev/null 2>&1; then
+    picom -b --config "$HOME/.config/picom/picom.conf"
+fi
+
+
+# --------------------------------------
+# DWM Blocks
+# --------------------------------------
+
+if command -v dwmblocks >/dev/null 2>&1; then
+    dwmblocks &
+fi
+
+
+# --------------------------------------
+# Start DWM
+# --------------------------------------
 
 exec dwm
