@@ -1,5 +1,22 @@
+# Build Instructions
 
+Note: Currently I only have the install script for ArchLinux.
 
+1. Clone github repository, having git installed on your system.
+   ```bash
+   git clone https://github.com/Invader788/archive
+   ```
+
+2. CD into the archive/ArchLinux directory.
+   ```bash
+   cd archive/ArchLinux
+   ```
+
+3. Make the install script executable and start the installation
+   ```bash
+   chmod +x install.sh
+   ./install
+   ```
 
 # Manual Build Instructions
 
