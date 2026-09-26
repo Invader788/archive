@@ -177,10 +177,11 @@ fi
 
 
 # --------------------------------------
-# Set Wallpapering
+# This dose something idk lol
 # --------------------------------------
 
 cp f.png ~/.config/wallpapers
+cp switch.sh ~/
 
 
 # --------------------------------------
