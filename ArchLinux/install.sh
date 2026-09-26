@@ -217,10 +217,11 @@ echo "Generate Pywal colors with:"
 echo
 echo "    wal -i ~/.config/wallpapers/wallpaper.jpg"
 echo
+echo "Start dwm with:"
+echo
+echo     "startx"
+echo
 echo "======================================"
-
-# Start DWM
-startx
 
 
 
