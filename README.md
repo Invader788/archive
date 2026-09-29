@@ -135,21 +135,11 @@ exit X (meta + shift + q),
 
 Change log:
 
-v1.24 alpha
+v1.2 
 
 New theming features!
 
-Right Now using the new switch.sh
-that switches the terminal color-scheme and background 
-(Note this is an alpha release and will be compatible with any wallpaper)
-right now I only have a test theme that I'm using for my wallpaper (in the github)
-and a darktheme that I made.
-
-In the full release there will be support for any wallpaper with python-pywal that will create the colorscheme 
-and then the script adds the colorscheme into dwm and terminal (alacritty).
-
-
-
+Volume info in dwmblocks
 
 # Legal
 License Note: The suckless software configurations are released under the MIT/X11 license. 
