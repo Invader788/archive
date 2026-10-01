@@ -57,9 +57,14 @@ fi
 # DWM Blocks
 # --------------------------------------
 
-if command -v dwmblocks >/dev/null 2>&1; then
-    dwmblocks &
-fi
+(
+    while :; do
+        killall dwmblocks 2>/dev/null
+        sleep 1
+        dwmblocks &
+        sleep 5
+    done
+) &
 
 
 # --------------------------------------
